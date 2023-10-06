@@ -64,22 +64,6 @@ const loginLink = document.getElementById('login-text');
 const profileLink = document.getElementById('user-profile');
 
 
-// auth.onAuthStateChanged(user => {
-//     if (user) {
-//         // User is signed in
-//         loginLink.style.display = 'none'; // Hide login link
-
-//         profileLink.style.display = 'block'; // Show profile link
-
-//         // You can also customize the behavior for authenticated users
-//         // For example, you can display the user's name or profile picture
-//     } else {
-//         // User is signed out
-//         loginLink.style.display = 'block'; // Show login link
-//         profileLink.style.display = 'none'; // Hide profile link
-//     }
-// });
-
 
 
 const imageele = document.getElementById('image-upload'); // Assuming you have an image preview element with ID 'image-preview'
@@ -88,19 +72,6 @@ const imageele = document.getElementById('image-upload'); // Assuming you have a
         const file = event.target.files[0];
         if (file) {
           imgdata = file
-        //   const reader = new FileReader();
-      
-        //   reader.onload = (e) => {
-        //     const img = new Image();
-        //     img.src = e.target.result;
-        //     img.onload = () => {
-        //         selectedImage.src = img.src;
-        //         selectedImage.style.display = "block";
-        //         document.getElementById("img-label").style.display = "none";
-        //     };
-        //   };
-      
-        //   reader.readAsDataURL(file);
       
         }
 });
@@ -134,6 +105,7 @@ form.addEventListener('submit', async (event) => {
     uploadBytes(imagesRef, imgdata).then((snapshot) => {
         console.log('Uploaded a blob or file!');
         console.log(snapshot)
+       
       });
     // console.log("image uploaded")
     // console.log(imgsnap)
@@ -165,7 +137,7 @@ form.addEventListener('submit', async (event) => {
     set(productsRef, productData)
         .then(() => {
             console.log('Product added to the database');
-            // Optionally, reset the form or display a success message
+            alert('Item Listed')
             form.reset();
         })
         .catch((error) => {

@@ -26,24 +26,7 @@ const auth = getAuth();
 // Get references to the navbar links
 // const loginLink = document.getElementById('login-text');
 const Signout = document.getElementById('signout-btn');
-// const profileLink = document.getElementById('user-profile');
 
-// Add a listener to track the authentication state change
-// auth.onAuthStateChanged(user => {
-//   if (user) {
-//     // User is signed in
-//     loginLink.style.display = 'none'; // Hide login link
-   
-//     profileLink.style.display = 'block'; // Show profile link
-
-//     // You can also customize the behavior for authenticated users
-//     // For example, you can display the user's name or profile picture
-//   } else {
-//     // User is signed out
-//     loginLink.style.display = 'block'; // Show login link
-//     profileLink.style.display = 'none'; // Hide profile link
-//   }
-// });
 
 Signout.addEventListener('click', (e)=>{
   signOut(auth).then(() => {
