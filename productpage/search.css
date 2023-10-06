@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.1s linear;
+}
+
+.container {
+    background-color: #f0f0f0;
+    justify-content: space-between;
+    display: flex;
+    margin: 25px 0px;
+    padding: 0px 90px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: 20px 20px;
+    overflow: hidden;
+    padding: 20px 20px;
+    margin-left: 450px;
+    justify-content: space-between;
+}
+
+.product-image {
+    max-width: 100%;
+    width: 90px;
+    height: 95px;
+    align-items: center;
+    margin-left: 2px;
+    margin: 20px 20px;
+}
+
+.product-desc {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    font-weight: 900;
+
+}
+
+.product-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 5px;
+}
+
+img{
+    max-width: 100%;
+    width: 90px;
+    height: 95px;
+    align-items: center;
+    margin-left: 2px;
+    margin: 20px 20px;
+}

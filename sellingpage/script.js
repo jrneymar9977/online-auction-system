@@ -1,3 +1,26 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+import { getDatabase, set, ref, update, onValue } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+import { getStorage, ref as storeref, uploadBytes } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updatePassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyAweFz9xiYWgWTFXGEyDyOe9xVCm5yXgK8",
+    authDomain: "online-auction-system-1b094.firebaseapp.com",
+    projectId: "online-auction-system-1b094",
+    storageBucket: "online-auction-system-1b094.appspot.com",
+    messagingSenderId: "234078592591",
+    appId: "1:234078592591:web:7a6832754ac56377ad543a"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const auth = getAuth();
+
+
 // Get a reference to the input element
 const floatInput = document.getElementById('float-input');
 
@@ -36,44 +59,22 @@ imageUpload.addEventListener('change', function () {
         }
     }
 });
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-import { getDatabase, set,ref, update, onValue } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
-import { getStorage, ref as storeref, uploadBytes  } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updatePassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyAweFz9xiYWgWTFXGEyDyOe9xVCm5yXgK8",
-    authDomain: "online-auction-system-1b094.firebaseapp.com",
-    projectId: "online-auction-system-1b094",
-    storageBucket: "online-auction-system-1b094.appspot.com",
-    messagingSenderId: "234078592591",
-    appId: "1:234078592591:web:7a6832754ac56377ad543a"
-};
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
-const auth = getAuth();
-// Initialize Firebase
-// Make sure you have Firebase initialized with your config settings
-// Get references to the navbar links
-const loginLink = document.getElementById('login-text');
-const profileLink = document.getElementById('user-profile');
+// const loginLink = document.getElementById('login-text');
+// const profileLink = document.getElementById('user-profile');
 
 
 
 
 const imageele = document.getElementById('image-upload'); // Assuming you have an image preview element with ID 'image-preview'
-    var imgdata = null;
-    imageele.addEventListener("change", (event) => {
-        const file = event.target.files[0];
-        if (file) {
-          imgdata = file
-      
-        }
+var imgdata = null;
+imageele.addEventListener("change", (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        imgdata = file
+
+    }
 });
 
 // Add an event listener to the form submission
@@ -92,7 +93,7 @@ form.addEventListener('submit', async (event) => {
     const address = document.querySelector('input[placeholder="Address"]').value;
 
     // Capture the image URL from the image preview (if needed)
-    
+
 
     const productId = generateUniqueProductId();
 
@@ -101,18 +102,18 @@ form.addEventListener('submit', async (event) => {
 
 
     // Create a reference to 'images/mountains.jpg'
-    var imagesRef = storeref(storage,`product_images/${productId}_${productName}.jpg`);
+    var imagesRef = storeref(storage, `product_images/${productId}_${productName}.jpg`);
     uploadBytes(imagesRef, imgdata).then((snapshot) => {
         console.log('Uploaded a blob or file!');
         console.log(snapshot)
-       
-      });
+
+    });
     // console.log("image uploaded")
     // console.log(imgsnap)
     const response = await fetch(product.imageurl);
     const imgToken = await response.json();
 
-      var imgurl = `https://firebasestorage.googleapis.com/v0/b/online-auction-system-1b094.appspot.com/o/product_images%2F${productId}_${productName}.jpg?alt=media&token=${imgToken.downloadTokens}`
+    var imgurl = `https://firebasestorage.googleapis.com/v0/b/online-auction-system-1b094.appspot.com/o/product_images%2F${productId}_${productName}.jpg?alt=media&token=${imgToken.downloadTokens}`
 
 
     // Create a data object
@@ -151,4 +152,48 @@ function generateUniqueProductId() {
     // Generate a unique ID logic here (e.g., UUID)
     // For simplicity, we'll use a timestamp for demonstration purposes
     return Date.now().toString();
+}
+const Signout = document.getElementById('signout-btn');
+Signout.addEventListener('click', (e) => {
+    signOut(auth).then(() => {
+
+        alert('signed out')
+        window.location = "/loginpage"
+    }).catch((error) => {
+
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage)
+    });
+
+})
+
+const searchButton = document.getElementById("searchButton");
+
+// Add a click event listener to the search button
+searchButton.addEventListener("click", () => {
+    // Get the user's search query from the input field
+    searchProuct();
+});
+
+function searchProuct() {
+    const searchQuery = document.getElementById("searchInput").value;
+
+    // Encode the search query for passing it as a URL parameter
+    const encodedSearchQuery = encodeURIComponent(searchQuery);
+
+    // Construct the URL for the search results page with the encoded search query
+    const searchResultsUrl = `search-res.html?searchQuery=${encodedSearchQuery}`;
+
+    // Redirect to the search results page
+    window.location.href = searchResultsUrl;
+}
+
+const searchbar = document.getElementById("searchInput")
+
+searchbar.addEventListener("keydown", searchUser);
+function searchUser(event) {
+    if (event.key == 'Enter') {
+        searchProuct()
+    }
 }

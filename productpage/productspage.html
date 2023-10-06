@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+          <img class="logo" src="../images/Quick_BID.png" alt="logo">
+          <section class="search-container">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search">
+            <div class="search-icon-container">
+              <i class="fas fa-search search-icon" id="searchButton"></i>
+            </div>
+          </section>
+          <ul>
+            <li><a href="#">My Auctions</a></li>
+            <!-- <li id="login-text" style="display: none;"><a href="../loginpage/index.html">Login/SignUp</a></li> -->
+            <!-- <li id="user-profile">
+                <img  class="userprofile" src="../images/user_icon.png"> -->
+            <li><a href="../homepage/homepage.html">Home</a></li>
+            <li><a href="../sellingpage/sellerpage.html">Sell</a></li>
+          </ul>
+          <img src="../images/user_icon.png" class="user-pic" onclick="toggleMenu()">
+    
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div id="signout-btn" class="user-info">
+                <h3>Signout</h3>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <br>
+    <h2>Product Listings</h2>
+    <div class="container">
+        <div class="box-container">
+            <div id="product-grid">
+                <!-- Products will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script type="module" src="productsview.js"></script>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+  
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+  
+    </script>
+</body>
+</html>
