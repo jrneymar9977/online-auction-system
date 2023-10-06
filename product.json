@@ -1,0 +1,185 @@
+{
+  "products": {
+    "productid1": {
+      "address": "Random Address, Chennai 600432",
+      "baseprice": 50000,
+      "category": "Electronics",
+      "date": "12-05-2023",
+      "description": "It is a smartphone with the latest features.",
+      "imageurl": "https://m.media-amazon.com/images/I/71ZDY57yTQL._AC_UF1000,1000_QL80_.jpg",
+      "price": 50000,
+      "productname": "iPhone 14 Pro Max",
+      "starttime": "15:45"
+    },
+    "productid10": {
+      "address": "777 Art Lane, Atlanta, GA 30301",
+      "baseprice": 25,
+      "category": "Art and Antiques",
+      "date": "21-05-2023",
+      "description": "A vintage art print to decorate your space.",
+      "imageurl": "https://m.media-amazon.com/images/I/81cksHpKHzL._AC_SX679_.jpg",
+      "price": 25,
+      "productname": "Vintage Art Print",
+      "starttime": "09:00"
+    },
+    "productid11": {
+      "address": "888 Auto Street, Dallas, TX 75201",
+      "baseprice": 50,
+      "category": "Automotive",
+      "date": "22-05-2023",
+      "description": "A kit with essential tools for car maintenance.",
+      "imageurl": "https://m.media-amazon.com/images/I/71IG8pLrNUL._AC_UL480_FMwebp_QL65_.jpg",
+      "price": 50,
+      "productname": "Car Maintenance Kit",
+      "starttime": "08:00"
+    },
+    "productid12": {
+      "address": "999 Toy Lane, Seattle, WA 98101",
+      "baseprice": 30,
+      "category": "Toys and Games",
+      "date": "23-05-2023",
+      "description": "A remote control toy car for kids and adults alike.",
+      "imageurl": "https://m.media-amazon.com/images/I/61qMSWNu6dL._AC_UL480_FMwebp_QL65_.jpg",
+      "price": 30,
+      "productname": "Remote Control Toy Car",
+      "starttime": "17:30"
+    },
+    "productid13": {
+      "address": "101 Yoga Street, Chicago, IL 60601",
+      "baseprice": 20,
+      "category": "Sports and Fitness",
+      "date": "24-05-2023",
+      "description": "A comfortable yoga mat for your fitness routine.",
+      "imageurl": "https://m.media-amazon.com/images/I/51CHKktH-TL._AC_UL480_FMwebp_QL65_.jpg",
+      "price": 20,
+      "productname": "Yoga Mat",
+      "starttime": "16:45"
+    },
+    "productid14": {
+      "address": "222 Coffee Lane, Boston, MA 02101",
+      "baseprice": 40,
+      "category": "Home and Kitchen",
+      "date": "25-05-2023",
+      "description": "A coffee maker for brewing your favorite coffee.",
+      "imageurl": "https://m.media-amazon.com/images/I/51q9WR-LfHL._AC_UY327_FMwebp_QL65_.jpg",
+      "price": 40,
+      "productname": "Coffee Maker",
+      "starttime": "12:45"
+    },
+    "productid15": {
+      "address": "333 Style Street, Denver, CO 80201",
+      "baseprice": 60,
+      "category": "Fashion and Accessories",
+      "date": "26-05-2023",
+      "description": "Designer sunglasses for a stylish look.",
+      "imageurl": "https://m.media-amazon.com/images/I/41Dr9I4x1EL._UX679_.jpg",
+      "price": 60,
+      "productname": "Designer Sunglasses",
+      "starttime": "14:00"
+    },
+    "productid2": {
+      "address": "123 Antique Lane, Paris, France",
+      "baseprice": 1000,
+      "category": "Art and Antiques",
+      "date": "13-05-2023",
+      "description": "A beautifully crafted antique wooden chest.",
+      "imageurl": "https://m.media-amazon.com/images/I/41gCdh5YmTL._SX300_SY300_QL70_FMwebp_.jpg",
+      "price": 1000,
+      "productname": "Antique Wooden Chest",
+      "starttime": "14:30"
+    },
+    "productid3": {
+      "address": "456 Auto Street, Los Angeles, CA 90001",
+      "baseprice": 200,
+      "category": "Automotive",
+      "date": "14-05-2023",
+      "description": "A comprehensive tool set for automotive enthusiasts.",
+      "imageurl": "https://m.media-amazon.com/images/I/91pXzeIlp+L._SX450_.jpg",
+      "price": 200,
+      "productname": "Automotive Tool Set",
+      "starttime": "11:15"
+    },
+    "productid4": {
+      "address": "789 Game Street, Seattle, WA 98101",
+      "baseprice": 50,
+      "category": "Toys and Games",
+      "date": "15-05-2023",
+      "description": "A collection of classic board games for family fun.",
+      "imageurl": "https://m.media-amazon.com/images/I/81p4LN2cTZL._AC_UL480_FMwebp_QL65_.jpg",
+      "price": 50,
+      "productname": "Board Games Collection",
+      "starttime": "10:00"
+    },
+    "productid5": {
+      "address": "101 Fit Avenue, Chicago, IL 60601",
+      "baseprice": 80,
+      "category": "Sports and Fitness",
+      "date": "16-05-2023",
+      "description": "A fitness tracker watch to monitor your workouts.",
+      "imageurl": "https://m.media-amazon.com/images/I/41NGtYQ7noL._SX300_SY300_QL70_FMwebp_.jpg",
+      "price": 80,
+      "productname": "Fitness Tracker Watch",
+      "starttime": "09:30"
+    },
+    "productid6": {
+      "address": "222 Kitchen Street, Boston, MA 02101",
+      "baseprice": 60,
+      "category": "Home and Kitchen",
+      "date": "17-05-2023",
+      "description": "A powerful blender for making smoothies and soups.",
+      "imageurl": "https://m.media-amazon.com/images/I/21YI83sGscL._SX300_SY300_QL70_FMwebp_.jpg",
+      "price": 60,
+      "productname": "Kitchen Blender",
+      "starttime": "13:45"
+    },
+    "productid7": {
+      "address": "444 Fashion Street, Denver, CO 80201",
+      "baseprice": 40,
+      "category": "Fashion and Accessories",
+      "date": "18-05-2023",
+      "description": "A stylish backpack for everyday use.",
+      "imageurl": "https://m.media-amazon.com/images/I/61ed7bjkpmL._AC_UL480_FMwebp_QL65_.jpg",
+      "price": 40,
+      "productname": "Fashionable Backpack",
+      "starttime": "12:00"
+    },
+    "productid8": {
+      "address": "555 Book Lane, Miami, FL 33101",
+      "baseprice": 75,
+      "category": "Books",
+      "date": "19-05-2023",
+      "description": "A set of bestselling novels from various genres.",
+      "imageurl": "https://m.media-amazon.com/images/I/61v8fNTUBCL._AC_UY327_FMwebp_QL65_.jpg",
+      "price": 75,
+      "productname": "Bestseller Novel Set",
+      "starttime": "11:30"
+    },
+    "productid9": {
+      "address": "666 Smart Lane, San Francisco, CA 94101",
+      "baseprice": 120,
+      "category": "Electronics",
+      "date": "20-05-2023",
+      "description": "A voice-controlled smart speaker for your home.",
+      "imageurl": "https://m.media-amazon.com/images/I/81bVIjpGEZL._AC_UY327_FMwebp_QL65_.jpg",
+      "price": 120,
+      "productname": "Smart Speaker",
+      "starttime": "10:15"
+    }
+  },
+  "users": {
+    "0IcF8NzQVGdhn9LWU9msiqxRgAk1": {
+      "email": "jrneymar997@gmail.com",
+      "last_login": "2023-09-24T10:49:59.317Z",
+      "username": "hello"
+    },
+    "ETVvpszwQ8QaN5QGFjKNbQiZ2og2": {
+      "email": "pbharathcr1@gmail.com",
+      "last_login": "2023-09-23T17:23:08.775Z",
+      "username": "benuc"
+    },
+    "JQoHwgy91eUHvUmtBioKT3oCeY03": {
+      "email": "pbharathcr@gmail.com",
+      "username": "bena"
+    }
+  }
+}

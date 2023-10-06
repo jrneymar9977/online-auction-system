@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f0f0f0;
+    color: #333; /* Adjust text color as needed */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Center align the content on the page */
+.container {
+    background-color: #f0f0f0;
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    height: 800px;
+    
+}
+
+#productImage {
+    max-width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+
+/* Style headings and paragraphs */
+h2, p {
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+/* Style individual product detail elements */
+#productName {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#productCategory {
+    font-size: 18px;
+}
+
+#productDescription {
+    font-size: 16px;
+}
+
+#productBasePrice {
+    font-size: 16px;
+}
+
+#productDate,
+#productStartTime {
+    font-size: 16px;
+}
+
+#productAddress {
+    font-size: 14px;
+}
+
+/* Add additional styles as needed for your specific design */

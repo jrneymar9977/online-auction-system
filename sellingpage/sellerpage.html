@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Items</title>
+    <link rel="stylesheet" href="sellingpage.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+          <img class="logo" src="../images/Quick_BID.png" alt="logo">
+          <section class="search-container">
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="search-icon-container">
+              <i class="fas fa-search search-icon"></i>
+            </div>
+          </section>
+          <ul>
+            <li><a href="#">My Auctions</a></li>
+            <li id="login-text" style="display: none;"><a href="../loginpage/index.html">Login/SignUp</a></li>
+            <!-- <li id="user-profile">
+                <img  class="userprofile" src="../images/user_icon.png"> -->
+            <li><a href="#">About</a></li>
+            <li><a href="../sellingpage/sellerpage.html">Sell</a></li>
+          </ul>
+          <img src="../images/user_icon.png" class="user-pic" onclick="toggleMenu()">
+    
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div id="signout-btn" class="user-info">
+                <h3>Signout</h3>
+              </div>
+            </div>
+          </div>
+    
+        </nav>
+      </div>
+    <br>
+
+
+    <div class="Wrapper">
+        <div class="form-box">
+            <h1>Sell Items</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name=""></ion-icon></span>
+                    <select id="category" required class="select_cat">
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Art and Antiques">Art and Antiques</option>
+                        <option value="Automotive">Automotive</option>
+                        <option value="Toys and Games">Toys and Games</option>
+                        <option value="Sports and Fitness">Sports and Fitness</option>
+                        <option value="Home and Kitchen">Home and Kitchen</option>
+                        <option value="Fashion and Accessories">Fashion and Accessories</option>
+                        <option value="Books">Books</option>
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name=""></ion-icon></span>
+                    <input type="text" required id="" placeholder="Product Name">
+
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name=""></ion-icon></span>
+                    <input type="text" required id="" placeholder="Description">
+
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="image"></ion-icon></span>
+                    <input type="file" required id="image-upload" accept=".jpg, .jpeg, .png" placeholder="Add an image">
+                </div>
+
+                <h4>Bid Base Price</h4>
+                <div class="input-box">
+                    <input type="text" inputmode="decimal" id="float-input" name="float-input"
+                        pattern="[0-9]*[.,]?[0-9]*" required placeholder="Enter Price">
+                </div>
+                <h4>Date</h4>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="time"></ion-icon></span>
+                    <input type="date" required id="" placeholder="Auction Duration">
+                </div>
+                <h4>Start Time</h4>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="time"></ion-icon></span>
+                    <input type="time" required id="" placeholder="Auction Duration">
+                </div>
+                <h4>End Time</h4>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="time"></ion-icon></span>
+                    <input type="time" required id="" placeholder="Auction Duration">
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="location"></ion-icon></span>
+                    <input type="text" required id="" placeholder="Address">
+                </div>
+                <div class="input-box">
+                <button type="submit" class="btn" id="">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script type="module" src="script.js"></script>
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>
+

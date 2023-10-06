@@ -1,0 +1,244 @@
+/* sellingpage styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    
+}
+
+nav{
+  background: rgb(152, 60, 237);;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 85px;
+}
+.logo{
+  width: 150px;
+  padding-top: 10px;
+  height: 150px;
+
+}
+.user-pic{
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 30px;
+  background-color: #fff;
+  padding: 5px;
+}
+nav ul{
+  width: 100%;
+  text-align: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+.sub-menu-wrap{
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  width: 100px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  
+}
+.sub-menu-wrap.open-menu{
+  max-height: 400px;
+  right: 10px;
+}
+
+.sub-menu{
+  /* background: #fff; */
+  padding: 0px;
+  margin: 10px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+}
+.user-info h3{
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block; /* Ensures the container only takes the necessary width */
+ 
+}
+
+.search-bar {
+  height: 40px;
+  width: 700px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 180px;
+  
+}
+
+.search-icon-container{
+  width: 50px;
+
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%);
+  color: #555; 
+  border-radius: 10; 
+  cursor: pointer; 
+   
+}
+
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.1s linear;
+}
+
+
+
+.form-box {
+    max-width: 600px;
+    margin: 50px auto; /* Center the form box horizontally */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.form-box h1 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px; /* Add spacing between input boxes */
+    justify-content: center;
+}
+
+ h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.input-box input {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto; /* Center the input box horizontally */
+    padding: 10px;
+    background: transparent;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    border: 2px solid #162938;
+    border-radius: 10px;
+}
+
+
+.input-box .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #162938;
+}
+
+.btn {
+
+    width: 30%;
+    height: 45px;
+    background:#162938;
+    border: none;    
+    outline: none;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.select_cat{
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto; /* Center the input box horizontally */
+    padding: 10px;
+    background: transparent;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    border: 2px solid #162938;
+    border-radius: 10px;
+}
+
+.userprofile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for the user profile image */
+  .userprofile-button img {
+    height: 40px;
+    width: 40px;
+    background-color: #dc9edd;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 5px;
+  }
+  
+  /* Style for the Sign Out link */
+  .sign-out-button {
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Style for the Sign Out link on hover */
+  .sign-out-button:hover {
+    color: #333;
+  }
+  
