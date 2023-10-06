@@ -187,3 +187,12 @@ h2{
     font-family: 'Roboto', sans-serif;
     margin: 5px 5px;
 }
+#preloader{
+  background: #000 url(../images/loader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 120vh;
+  width: 100%;
+  margin-top: -100px;
+  position: fixed;
+  z-index: 100;
+}

@@ -11,6 +11,7 @@
 
 </head>
 <body>
+  <div id="preloader" ></div>
     <div class="hero">
         <nav>
           <img class="logo" src="../images/Quick_BID.png" alt="logo">
@@ -22,9 +23,7 @@
           </section>
           <ul>
             <li><a href="#">My Auctions</a></li>
-            <!-- <li id="login-text" style="display: none;"><a href="../loginpage/index.html">Login/SignUp</a></li> -->
-            <!-- <li id="user-profile">
-                <img  class="userprofile" src="../images/user_icon.png"> -->
+            <li id="login-text" style="display: none;"><a href="../loginpage/index.html">Login/SignUp</a></li>
             <li><a href="../homepage/homepage.html">Home</a></li>
             <li><a href="../sellingpage/sellerpage.html">Sell</a></li>
           </ul>
@@ -48,6 +47,7 @@
             </div>
         </div>
     </div>
+    
     <script type="module" src="productsview.js"></script>
     <script>
       let subMenu = document.getElementById("subMenu");
@@ -57,5 +57,15 @@
       }
   
     </script>
+    <script>
+    
+      var loader = document.getElementById("preloader");
+         
+      window.addEventListener("load", async function(){
+          await setTimeout(() => {  loader.style.display = "none"; }, 3000);
+          
+      })
+      
+      </script>
 </body>
 </html>

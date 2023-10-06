@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="search.css">
 </head>
 <body>
+    <div id="preloader" ></div>
     <h2>Search Results</h2>
     <div class="container">
         <div class="box-container">
@@ -15,5 +16,15 @@
         </div>
     </div>
     <script type="module" src="search-results.js"></script>
+    <script>
+    
+        var loader = document.getElementById("preloader");
+           
+        window.addEventListener("load", async function(){
+            await setTimeout(() => {  loader.style.display = "none"; }, 2000);
+            
+        })
+        
+        </script>
 </body>
 </html>

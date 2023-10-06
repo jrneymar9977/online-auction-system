@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div id="preloader" ></div>
     <!-- Display the product details on this page -->
     <h1>Product Details</h1>
     <div class="container">
@@ -30,5 +31,15 @@
 
     <!-- Include your JavaScript for handling query parameters and displaying product details -->
     <script src="product-details.js"></script>
+    <script>
+    
+        var loader = document.getElementById("preloader");
+           
+        window.addEventListener("load", async function(){
+            await setTimeout(() => {  loader.style.display = "none"; }, 2000);
+            
+        })
+        
+        </script>
 </body>
 </html>
