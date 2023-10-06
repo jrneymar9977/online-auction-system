@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProfilePage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
 
         <div class="form-box">
             <h2>Profile</h2>
             <form action="#">
-                <div class="input-box"> 
-                    <input type="text" required id="Username">
+                <div class="input-box">
+                    <input type="text" id="Username">
                     <label>Username</label>
                 </div>
-                <div class="input-box"> 
-                    <input type="text" required id="About">
+                <div class="input-box">
+                    <input type="text" id="About">
                     <label>About Me</label>
                 </div>
-                
+
                 <div class="input-box">
-                   
-                    <input type="tel" required id="num" pattern="[0-9]{10}" maxlength="10">
+
+                    <input type="tel" id="num" pattern="[0-9]{10}" maxlength="10">
                     <label>Mobile Number</label>
                 </div>
-                <div class="input-box"> 
-                    <input type="text" required id="Address">
+                <div class="input-box">
+                    <input type="text" id="Address">
                     <label>Address</label>
                 </div>
-                <button type="submit" class="btn" id="submit" onclick="submitfunction()">Submit</button>
+                <button class="btn" id="submit" onclick="submitfunction()">Submit</button>
             </form>
         </div>
+        <script>
+            function submitfunction() {
+                window.location = "../homepage/homepage.html"
+            }
+        </script>
 </body>
-<script>
-    function submitfunction(){
-        
-        window.location = "../homepage/homepage.html"
-    }
-</script>
+
 </html>

@@ -21,23 +21,21 @@
   const database = getDatabase(app);
   const auth = getAuth();
  
- Register.addEventListener('click',(e)=>{
+  Signup.addEventListener('click',(e)=>{
   
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
- 
   const auth = getAuth();
  createUserWithEmailAndPassword(auth, email, password)
  .then((userCredential) => {
-  // Signed in 
   const user = userCredential.user;
   set(ref(database, 'users/' + user.uid),{
       username: name,
       email: email
   })
   alert('user created');
-  window.location.assign("../profilepage/profilepage.html");
+  window.location = "../profilepage/profilepage.html";
 
   // ...
  })
@@ -49,7 +47,7 @@
  });
  })
  
- Login.addEventListener('click',(e)=>{
+Login.addEventListener('click',(e)=>{
   var email = document.getElementById('email-login').value;
   var password = document.getElementById('pass-login').value;
   console.log(email)
@@ -97,20 +95,20 @@
  
 //  })
  
- change_pass.addEventListener('click', (e)=>{
+//  change_pass.addEventListener('click', (e)=>{
  
- const user = auth.currentUser;
- const newPassword = getASecureRandomPassword();
+//  const user = auth.currentUser;
+//  const newPassword = getASecureRandomPassword();
  
- updatePassword(user, newPassword).then(() => {
- // Update successful.
- alert('password changed')
- }).catch((error) => {
- // An error ocurred
- // ...
- const errorCode = error.code;
-  const errorMessage = error.message;
- alert('errorMessage')
- });
- })
+//  updatePassword(user, newPassword).then(() => {
+//  // Update successful.
+//  alert('password changed')
+//  }).catch((error) => {
+//  // An error ocurred
+//  // ...
+//  const errorCode = error.code;
+//   const errorMessage = error.message;
+//  alert('errorMessage')
+//  });
+//  })
  
